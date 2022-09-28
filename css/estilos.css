@@ -1,0 +1,126 @@
+:root {
+    --fuenteTitulo: 'Libre Franklin', sans-serif;
+    --fuentePrincipal: 'Open Sans', sans-serif;
+
+    --colorPrincipal: #875E8C;
+    --colorSecundario: #4A3259;
+    --colorTitulo: #251D59;
+    --negro: #161426;
+    --blanco: #FFFFFF;
+    --gris: #E9E9E9;
+}
+
+/** Globales **/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/** Header **/
+.header {
+    padding: 4rem 0 0 0;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    width: 15rem;
+    margin: 0 auto 2rem auto;
+}
+
+.header__enlace {
+    font-size: 3rem;
+    font-family: var(--fuenteTitulo);
+    font-weight: 700;
+    text-align: center;
+    color: var(--colorTitulo);
+}
+
+/** Hero **/
+.hero {
+    height: 60rem;
+    margin-top: 5rem;
+}
+
+.hero__contenido {
+    background-image: url(../img/bg_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -185px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1400px) { 
+    .hero__contenido {
+        background-position: right bottom;
+        align-items: center;
+    } 
+}
+
+.hero__contenido::before {
+    content: '';
+    background-color: var(--colorTitulo);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.25;
+}
+
+.hero__heading {
+    color: var(--blanco);
+    text-align: center;
+    line-height: 1.5;
+    font-size: 4rem;
+    z-index: 1;
+}
+
+.entradas__contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--blanco);
+}
+

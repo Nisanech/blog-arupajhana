@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Blog Arupajhana</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <!--* Header *-->
@@ -19,122 +32,123 @@
     <!--* Hero *-->
     <section class="hero">
         <div class="hero__contenido">
-            <div class="hero__texto">
-                <h1 class="hero__heading">Blog Arupajhana</h1>
-            </div>
+            <h1 class="hero__heading">Blog Arupajhana</h1>
         </div>
     </section> <!--* /Hero *-->
 
     <!--* Entradas de Blog *-->
     <main class="entradas">
-        <!-- Filtros -->
-        <ul class="filtros">
-            <li class="filtros__link filtros__link--activo">
-                Todas
-            </li>
+        <!-- Contenedor -->
+        <div class="entradas__contenedor">
+            <!-- Filtros -->
+            <ul class="filtros">
+                <li class="filtros__link filtros__link--activo">
+                    Todas
+                </li>
+    
+                <li class="filtros__link">
+                    Budismo
+                </li>
+                
+                <li class="filtros__link">
+                    Meditación
+                </li>
+    
+                <li class="filtros__link">
+                    Libros
+                </li>
+            </ul> <!-- /Filtros -->
 
-            <li class="filtros__link">
-                Budismo
-            </li>
-            
-            <li class="filtros__link">
-                Meditación
-            </li>
-
-            <li class="filtros__link">
-                Libros
-            </li>
-        </ul> <!-- /Filtros -->
-
-        <div class="entradas__galeria">
-            <!-- Entrada 1 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada1.jpg" alt="Imagen Entrada">
-                </div>
+            <div class="entradas__galeria">
+                <!-- Entrada 1 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada1.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">Buda Shakyamuni</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 1 -->
     
-                <h2 class="entrada__titulo">Buda Shakyamuni</h2>
+                <!-- Entrada 2 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada2.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="#">Títulos de la tradición Mahayana</h2>
+        
+                    <a href="entrada2.html" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 2 -->
     
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 1 -->
-
-            <!-- Entrada 2 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada2.jpg" alt="Imagen Entrada">
-                </div>
+                <!-- Entrada 3 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada3.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">Meditación desde el Budismo</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 3 -->
     
-                <h2 class="#">Títulos de la tradición Mahayana</h2>
+                <!-- Entrada 4 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada4.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">Tantra de Vajrasatva</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 4 -->
     
-                <a href="entrada2.html" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 2 -->
-
-            <!-- Entrada 3 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada3.jpg" alt="Imagen Entrada">
-                </div>
+                <!-- Entrada 5 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada5.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">Meditación Tántrica</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 5 -->
     
-                <h2 class="entrada__titulo">Meditación desde el Budismo</h2>
+                <!-- Entrada 6 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada6.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">La medicina espiritual del Tíbet</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 6 -->
     
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 3 -->
-
-            <!-- Entrada 4 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada4.jpg" alt="Imagen Entrada">
-                </div>
+                <!-- Entrada 7 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada7.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">Vagando por el Samsara</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 7 -->
     
-                <h2 class="entrada__titulo">Tantra de Vajrasatva</h2>
-    
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 4 -->
-
-            <!-- Entrada 5 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada5.jpg" alt="Imagen Entrada">
-                </div>
-    
-                <h2 class="entrada__titulo">Meditación Tántrica</h2>
-    
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 5 -->
-
-            <!-- Entrada 6 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada6.jpg" alt="Imagen Entrada">
-                </div>
-    
-                <h2 class="entrada__titulo">La medicina espiritual del Tíbet</h2>
-    
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 6 -->
-
-            <!-- Entrada 7 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada7.jpg" alt="Imagen Entrada">
-                </div>
-    
-                <h2 class="entrada__titulo">Vagando por el Samsara</h2>
-    
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 7 -->
-
-            <!-- Entrada 8 -->
-            <div class="entradas__entrada-blog">
-                <div class="entrada__imagen">
-                    <img src="img/Img_Entrada8.jpg" alt="Imagen Entrada">
-                </div>
-    
-                <h2 class="entrada__titulo">El libro Tibetano de los muertos</h2>
-    
-                <a href="#" class="entrada__enlace">Leer Entrada</a>
-            </div> <!-- /Entrada 8 -->
-        </div>
+                <!-- Entrada 8 -->
+                <div class="entradas__entrada-blog">
+                    <div class="entrada__imagen">
+                        <img src="img/Img_Entrada8.jpg" alt="Imagen Entrada">
+                    </div>
+        
+                    <h2 class="entrada__titulo">El libro Tibetano de los muertos</h2>
+        
+                    <a href="#" class="entrada__enlace">Leer Entrada</a>
+                </div> <!-- /Entrada 8 -->
+            </div>
+        </div> <!-- /Contenedor -->
     </main> <!--* /Entradas de Blog *-->
 
     <!--* Footer *-->
@@ -145,5 +159,7 @@
 
         <p class="footer__texto">2022</p>
     </footer> <!--* /Footer *-->
+
+    
 </body>
 </html>
