@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Entrada Blog </title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
+
 <body>
-    <h1>Entrada de blog 1</h1>
+    <!--* Header *-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../../index.html">
+                <img src="../../img/Logo_Arupajhana.svg" alt="Logo">
+            </a>
+        </div>
+
+        <h1 class="header__titulo">Buda Shakyamuni</h1>
+    </header> <!--* /Header *-->
+
+    <!--* Entrada de Blog *-->
+    <main class="entradas__contenedor">
+        <div class="entrada__imagen">
+            <img src="../../img/Img_Entrada1.jpg" alt="Imagen Entrada">
+        </div>
+
+        <p class="entrada__texto">
+            Buda Shakyamuni fue el fundador histórico del budismo,
+            nació en la India hace aproximadamente 2.500 años. Era el hijo de Shuddhodana, el rey de los Shakya, una tribu
+            pequeña que se encontraba situada en las estribaciones de la cordillera del Himalaya al sur de lo que hoy es el centro de Nepal. El significado de su nombre "Shakya" proviene del nombre de su tribu y "muni" significa sabio o santo. Su nombre y apellido de cuna era Siddhartha que significa "Objetivo logrado" y Gautama significa "La mejor vaca".
+        </p>
+
+        <p class="entrada__texto">
+            Cuenta la historia, que a sus diecinueve (19) años, Siddhartha renunció a su vida secular y a su condición
+            principesca para vivir una vida religiosa. Después de abandonar el palacio de los Shakya en Kapilavastu, viajó por diferentes lugares en donde realizo diferentes estudios religiosos, pasando por lugares como Rajagriha, Uruvilva, Nairanjana. Sin embargo, estos caminos religiosos que práctico durante años en los lugares anteriormente mencionados no le brindaron las respuesta que él esperaba, después de 6 años renunció a las prácticas de automortificación de Uruvilva.
+        </p>
+
+        <p class="entrada__texto">
+            Cerca de la ciudad de Gaya, se sentó bajo un árbol y entró en meditación. Se dice, que allí alcanzó la iluminación a la edad de treinta años. Con el tiempo, el árbol fue llamado el árbol de la iluminación porque Shakyamuni alcanzó el Bodhi o la iluminación bajo ese árbol. Una vez despertó, se cuestionó si debía o no compartir sus conocimientos con otros, pero al final decidió hacerlo, para que el camino a la liberación de los sufrimientos del nacimiento y la muerte estuviera abierto a todas las personas.
+        </p>
+
+        <p class="entrada__texto">
+            Primero se dirigió al Parque de los Venados en Varanasi,donde predicó las Cuatro Nobles Verdades a cinco ascetas
+            que alguna vez habían sido sus compañeros. Desde ese momento hasta el día de su muerte, Shakyamuni continúo
+            viajando a través de la India difundiendo sus enseñanzas. En el último año de su vida continúo  viajando hasta llegar a Kushinagara, allí se adentró en un bosque de árboles de sal, se acostó tranquilamente y dijo a sus discípulos: "No piensen que las palabras de su maestro ya no existen ni que se van a quedar sin maestro. Las enseñanzas y preceptos que les he expuesto deberán ser su maestro". Murió a la edad de 80 años.
+        </p>
+
+        <p class="entrada__texto">
+            Centro Yamantaka. (s.f). Recuperado el 22 de 09 de 2022.
+        </p>
+
+        <div class="publicacion">
+            <p class="publicacion__autor">
+                <span>Autor</span>Nicolás Naranjo
+            </p>
+
+            <p class="publicacion__fecha">
+                <span>Fecha</span>23/09/2022
+            </p>
+        </div>
+    </main> <!--* /Entrada de Blog *-->
+
+    <!--* Comentarios *-->
+    <section class="comentarios__contenedor">
+        <div class="comentario">
+            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+
+            <p class="comentario__cantidad">
+                1 comentario
+            </p>
+        </div>
+
+        <div class="publicado">
+            <div class="publicado__vacio"></div>
+
+            <p class="publicado__autor">
+                Anónimo
+            </p>
+
+            <p class="publicado__fecha">
+                23/09/2022
+            </p>
+        </div>
+
+        <div class="contenido">
+            <div class="contenido__vacio"></div>
+
+            <p class="contenido__texto">
+                Buen artículo. Gracias
+            </p>
+        </div>
+    </section> <!--* /Comentarios *-->
+
+    <!--* Dejar Comentario *-->
+    <section class="dejar-comentario__contenedor">
+        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="autor" class="campo__nombre">
+                    Autor
+                </label>
+
+                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="correo" class="campo__nombre">
+                    Correo
+                </label>
+
+                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="campo campo--msj">
+                <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                    Mensaje
+                </label>
+
+                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+            </div>
+
+            <input type="submit" class="formulario__btn" value="Comentar">
+        </form>
+    </section> <!--* Dejar Comentario *-->
+
+    <!--* Footer *-->
+    <footer class="footer">
+        <p class="footer__texto">Blog Arupajhana</p>
+
+        <p class="footer__texto">Todos los derechos reservados.</p>
+
+        <p class="footer__texto">2022</p>
+    </footer> <!--* /Footer *-->
 </body>
 </html>

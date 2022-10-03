@@ -4,9 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Entrada Blog </title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-    <h1>Entrada de blog 7</h1>
+    <!--* Header *-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../../index.html">
+                <img src="../../img/Logo_Arupajhana.svg" alt="Logo">
+            </a>
+        </div>
+
+        <h1 class="header__titulo">Vagando por el Samsara</h1>
+    </header> <!--* /Header *-->
+
+    <!--* Entrada de Blog *-->
+    <main class="entradas__contenedor">
+        <div class="entrada__imagen">
+            <img src="../../img/Img_Entrada7.jpg" alt="Imagen Entrada">
+        </div>
+
+        <p class="entrada__texto">
+            Sin lugar a dudas, cada uno de nosotros morirá. Todos seguiremos el ciclo del nacimiento y muerte, una y otra vez. Sólo un conocimiento profundo de los procesos que impulsan la existencia nos permitirá abandonar el círculo en el que estamos atrapados.
+        </p>
+
+        <p class="entrada__texto">
+            Durante más de veinte años Geshe Tsering Palden ha enseñado a estudiantes europeos, presentando hábilmente las vastas enseñanzas del budismo tibetano. En el presente libro expone la visión del budismo vajrayana acerca de la muerte y el bardo, abordando cuestiones tales como: ¿Quién nace? ¿Cómo y dónde podemos llegar a nacer? ¿En qué circunstancias? ¿Cómo es y cuándo llega la muerte?
+        </p>
+        
+        <p class="entrada__texto">
+            Además de contener una detallada y clara descripción del proceso de la muerte, este libro es una inspiradora guía para extraer las grandes posibilidades que contiene este crucial momento.
+        </p>
+        
+        <p class="entrada__texto">
+            Venerable Lama Geshe Tsering Palden. (s.f). Recuperado el 22 de 09 de 2022.
+        </p>
+
+        <div class="publicacion">
+            <p class="publicacion__autor">
+                <span>Autor</span>Nicolás Naranjo
+            </p>
+
+            <p class="publicacion__fecha">
+                <span>Fecha</span>23/09/2022
+            </p>
+        </div>
+    </main> <!--* /Entrada de Blog *-->
+
+    <!--* Comentarios *-->
+    <section class="comentarios__contenedor">
+        <div class="comentario">
+            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+
+            <p class="comentario__cantidad">
+                1 comentario
+            </p>
+        </div>
+
+        <div class="publicado">
+            <div class="publicado__vacio"></div>
+
+            <p class="publicado__autor">
+                Anónimo
+            </p>
+
+            <p class="publicado__fecha">
+                23/09/2022
+            </p>
+        </div>
+
+        <div class="contenido">
+            <div class="contenido__vacio"></div>
+
+            <p class="contenido__texto">
+                Buen artículo. Gracias
+            </p>
+        </div>
+    </section> <!--* /Comentarios *-->
+
+    <!--* Dejar Comentario *-->
+    <section class="dejar-comentario__contenedor">
+        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="autor" class="campo__nombre">
+                    Autor
+                </label>
+
+                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="correo" class="campo__nombre">
+                    Correo
+                </label>
+
+                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="campo campo--msj">
+                <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                    Mensaje
+                </label>
+
+                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+            </div>
+
+            <input type="submit" class="formulario__btn" value="Comentar">
+        </form>
+    </section> <!--* Dejar Comentario *-->
+
+    <!--* Footer *-->
+    <footer class="footer">
+        <p class="footer__texto">Blog Arupajhana</p>
+
+        <p class="footer__texto">Todos los derechos reservados.</p>
+
+        <p class="footer__texto">2022</p>
+    </footer> <!--* /Footer *-->
 </body>
 </html>

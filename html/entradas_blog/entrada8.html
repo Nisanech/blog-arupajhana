@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Entrada Blog </title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-    <h1>Entrada de blog 8</h1>
+    <!--* Header *-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../../index.html">
+                <img src="../../img/Logo_Arupajhana.svg" alt="Logo">
+            </a>
+        </div>
+
+        <h1 class="header__titulo">El Libro Tibetano de los Muertos</h1>
+    </header> <!--* /Header *-->
+
+    <!--* Entrada de Blog *-->
+    <main class="entradas__contenedor">
+        <div class="entrada__imagen">
+            <img src="../../img/Img_Entrada8.jpg" alt="Imagen Entrada">
+        </div>
+
+        <p class="entrada__texto">
+            El llamado “Libro Tibetano de los Muertos” ha sido reconocido durante siglos como un clásico de la sabiduría budista y del pensamiento religioso. Más recientemente, ha alcanzado gran influencia en el mundo occidental por sus penetraciones psicológicas sobre el proceso de la muerte y del morir, y por lo que puede enseñarnos acerca de nuestras vidas. También ha resultado de ayuda en los procesos de duelo de personas que recientemente han perdido a algún ser querido.
+        </p>
+        
+        <p class="entrada__texto">
+            Compuesto en el siglo VIII d. de C., su intención es la de preparar al alma para las adversidades y transformaciones del más allá. Su profundo mensaje es que el arte de morir es tan importante como el de vivir. Extraído de las tradiciones espirituales tibetanas, nos muestra los funcionamientos de la mente en sus diversas manifestaciones -aterradoras y tranquilizadoras, iracundas y hermosas-, que aparecen más claramente en la conciencia del difunto. Reconociendo dichas manifestaciones podremos alcanzar el estado de iluminación, tanto en esta existencia como en la venidera.
+        </p>
+
+        <p class="entrada__texto">
+            Padma Sambhava. (s.f). Recuperado el 22 de 09 de 2022.
+        </p>
+
+        <div class="publicacion">
+            <p class="publicacion__autor">
+                <span>Autor</span>Nicolás Naranjo
+            </p>
+
+            <p class="publicacion__fecha">
+                <span>Fecha</span>23/09/2022
+            </p>
+        </div>
+    </main> <!--* /Entrada de Blog *-->
+
+    <!--* Comentarios *-->
+    <section class="comentarios__contenedor">
+        <div class="comentario">
+            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+
+            <p class="comentario__cantidad">
+                1 comentario
+            </p>
+        </div>
+
+        <div class="publicado">
+            <div class="publicado__vacio"></div>
+
+            <p class="publicado__autor">
+                Anónimo
+            </p>
+
+            <p class="publicado__fecha">
+                23/09/2022
+            </p>
+        </div>
+
+        <div class="contenido">
+            <div class="contenido__vacio"></div>
+
+            <p class="contenido__texto">
+                Buen artículo. Gracias
+            </p>
+        </div>
+    </section> <!--* /Comentarios *-->
+
+    <!--* Dejar Comentario *-->
+    <section class="dejar-comentario__contenedor">
+        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="autor" class="campo__nombre">
+                    Autor
+                </label>
+
+                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="correo" class="campo__nombre">
+                    Correo
+                </label>
+
+                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="campo campo--msj">
+                <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                    Mensaje
+                </label>
+
+                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+            </div>
+
+            <input type="submit" class="formulario__btn" value="Comentar">
+        </form>
+    </section> <!--* Dejar Comentario *-->
+
+    <!--* Footer *-->
+    <footer class="footer">
+        <p class="footer__texto">Blog Arupajhana</p>
+
+        <p class="footer__texto">Todos los derechos reservados.</p>
+
+        <p class="footer__texto">2022</p>
+    </footer> <!--* /Footer *-->
 </body>
 </html>

@@ -4,9 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Entrada Blog </title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-    <h1>Entrada de blog 3</h1>
+    <!--* Header *-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../../index.html">
+                <img src="../../img/Logo_Arupajhana.svg" alt="Logo">
+            </a>
+        </div>
+
+        <h1 class="header__titulo">Meditación desde el Budismo</h1>
+    </header> <!--* /Header *-->
+
+    <!--* Entrada de Blog *-->
+    <main class="entradas__contenedor">
+        <div class="entrada__imagen">
+            <img src="../../img/Img_Entrada3.jpg" alt="Imagen Entrada">
+        </div>
+
+        <p class="entrada__texto">
+            De acuerdo con el budismo, la naturaleza de la mente es calma. Hablamos de mente no solo como intelecto, hablamos de mente entendida como pensamientos, emociones, sentimientos, manera de entender la vida, maneras de reaccionar.
+        </p>
+        
+        <p class="entrada__texto">
+            El bullicio de pensamientos, emociones, etc., no forman parte de la naturaleza esencial de la mente, sino que son un producto. Cuando se deja reposar la mente de forma natural, sin reaccionar, la mente se calma y el volumen de pensamientos se reduce.
+        </p>
+
+        <p class="entrada__texto">
+            Desde esa calma incipiente se puede investigar la mente, ver su estado y transformarlo. Este trabajo de transformación es el que facilita que la calma mental sea estable en el tiempo.
+        </p>
+
+        <p class="entrada__texto">
+            Se podría decir que dentro del budismo existen dos tradiciones para la meditación, las cuales son:
+        </p>
+
+        <p class="entrada__texto">
+            El linaje Theravada (Tradición de los Ancianos), que se basa en sutras escritos en el idioma Pali, se extendió desde la India a Sri Lanka, Tailandia, Birmania, etc. Esta tradición hace hincapié en la meditación principalmente en la respiración para desarrollar la concentración, y en la meditación de la atención plena del cuerpo, las sensaciones, la mente y los fenómenos con el fin de desarrollar la sabiduría.
+        </p>
+
+        <p class="entrada__texto">
+            Por otro lado, la tradición Mahayana (Gran Vehículo), basada en las escrituras en sánscrito, se extendió a China, Tibet, Japón, Corea, Vietnam, etc. Aunque en el budismo Theravada el amor y la compasión son prácticas esenciales e importantes, en el Mahayana éstas prácticas se enfatizan mucho más.
+        </p>
+
+        <p class="entrada__texto">
+            Dentro del Mahayana, hay varias ramas: La Tierra Pura practica el canto del nombre del Buda Amitabha con el fin de renacer en su tierra pura; el Zen enfatiza la meditación para eliminar la mente conceptual ruidosa; el Vajrayana (Vehículo del Diamante) emplea la meditación en una deidad para transformar nuestro cuerpo y mente contaminados en el cuerpo y la mente de un Buda.
+        </p>
+
+        <p class="entrada__texto">
+            Centro Yamantaka. (s.f). Recuperado el 22 de 09 de 2022.
+        </p>
+
+        <div class="publicacion">
+            <p class="publicacion__autor">
+                <span>Autor</span>Nicolás Naranjo
+            </p>
+
+            <p class="publicacion__fecha">
+                <span>Fecha</span>23/09/2022
+            </p>
+        </div>
+    </main> <!--* /Entrada de Blog *-->
+
+    <!--* Comentarios *-->
+    <section class="comentarios__contenedor">
+        <div class="comentario">
+            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+
+            <p class="comentario__cantidad">
+                1 comentario
+            </p>
+        </div>
+
+        <div class="publicado">
+            <div class="publicado__vacio"></div>
+
+            <p class="publicado__autor">
+                Anónimo
+            </p>
+
+            <p class="publicado__fecha">
+                23/09/2022
+            </p>
+        </div>
+
+        <div class="contenido">
+            <div class="contenido__vacio"></div>
+
+            <p class="contenido__texto">
+                Buen artículo. Gracias
+            </p>
+        </div>
+    </section> <!--* /Comentarios *-->
+
+    <!--* Dejar Comentario *-->
+    <section class="dejar-comentario__contenedor">
+        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+        <form class="formulario">
+            <div class="campo">
+                <label for="autor" class="campo__nombre">
+                    Autor
+                </label>
+
+                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="correo" class="campo__nombre">
+                    Correo
+                </label>
+
+                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="campo campo--msj">
+                <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                    Mensaje
+                </label>
+
+                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+            </div>
+
+            <input type="submit" class="formulario__btn" value="Comentar">
+        </form>
+    </section> <!--* Dejar Comentario *-->
+
+    <!--* Footer *-->
+    <footer class="footer">
+        <p class="footer__texto">Blog Arupajhana</p>
+
+        <p class="footer__texto">Todos los derechos reservados.</p>
+
+        <p class="footer__texto">2022</p>
+    </footer> <!--* /Footer *-->
 </body>
 </html>
