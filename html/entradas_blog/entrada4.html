@@ -32,7 +32,7 @@
     </header> <!--* /Header *-->
 
     <!--* Entrada de Blog *-->
-    <main class="entradas__contenedor">
+    <main class="entradas__contenedor entradas__grid">
         <div class="entrada__imagen">
             <img src="../../img/Img_Entrada4.jpg" alt="Imagen Entrada">
         </div>
@@ -41,16 +41,16 @@
             El vehículo del Tantra o Vajra, muy conocido en el budismo, está considerado como una práctica extraordinaria y muy especial. Las enseñanzas auténticas sobre la práctica del Tantra no se encuentran fácilmente, son raras y preciosas.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             La enseñanza que dio el Buda se puede clasificar en tres
             diferentes vehículos. La razón por la que existen esos tres vehículos es la distinta capacidad, inteligencia, intereses y predisposición mental de los diferentes discípulos que siguen el camino. Así para los que tienen interés en obtener la liberación de los engaños, especialmente la liberación del apego a los 3 mundos: el mundo del deseo, el mundo de la forma y el mundo sin forma, Buda enseñó el Vehículo Hinayana. Para aquellos que tienen interés en utilizar los engaños como una herramienta para poder ayudar a los demás seres se han dado las enseñanzas del Vehículo Mahayana, el camino extenso. En el vehículo Hinayana el propósito principal de la práctica es eliminar completamente los engaños del continuo mental. En cambio en el Vehículo Mahayana el objetivo principal no es tanto eliminar los engaños sino poder ayudar a los demás seres. Los practicantes de este vehículo actúan en todo momento por el beneficio de los demás, tomando diferentes renacimientos para favorecer a los otros. Para los practicantes que tienen interés en el camino más profundo, Buda enseñó la práctica del Tantra, para poder transformar el apego en el camino. El camino profundo, mediante la práctica tántrica, lo que hace es transformar el deseo o apego en el propio camino, mientras que los otros vehículos anteriores no lo hacen.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Para limpiar el karma negativo acumulado en esta vida y en las pasadas hay que llevar a cabo actividades de purificación como la práctica del Buda Vajrasatva. Vajrasatva despliega una actividad pacificadora, aparece con forma de bodhisatva y es de color blanco sin mácula. Es el buda de la pureza y purifica las impresiones negativas acumuladas a través de nuestro cuerpo, palabra y mente. La práctica de la meditación en Vajrasatva nos proporciona paz mental, ecuanimidad y ayuda a que afloren nuestras cualidades positivas.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Venerable Lama Geshe Tsering Palden. (s.f). Recuperado el 22 de 09 de 2022.
         </p>
 
@@ -66,68 +66,70 @@
     </main> <!--* /Entrada de Blog *-->
 
     <!--* Comentarios *-->
-    <section class="comentarios__contenedor">
-        <div class="comentario">
-            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+    <div class="comentarios__grid">
+        <section class="comentarios__contenedor">
+            <div class="comentario">
+                <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
 
-            <p class="comentario__cantidad">
-                1 comentario
-            </p>
-        </div>
-
-        <div class="publicado">
-            <div class="publicado__vacio"></div>
-
-            <p class="publicado__autor">
-                Anónimo
-            </p>
-
-            <p class="publicado__fecha">
-                23/09/2022
-            </p>
-        </div>
-
-        <div class="contenido">
-            <div class="contenido__vacio"></div>
-
-            <p class="contenido__texto">
-                Buen artículo. Gracias
-            </p>
-        </div>
-    </section> <!--* /Comentarios *-->
-
-    <!--* Dejar Comentario *-->
-    <section class="dejar-comentario__contenedor">
-        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
-
-        <form class="formulario">
-            <div class="campo">
-                <label for="autor" class="campo__nombre">
-                    Autor
-                </label>
-
-                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                <p class="comentario__cantidad">
+                    1 comentario
+                </p>
             </div>
 
-            <div class="campo">
-                <label for="correo" class="campo__nombre">
-                    Correo
-                </label>
+            <div class="publicado">
+                <div class="publicado__vacio"></div>
 
-                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                <p class="publicado__autor">
+                    Anónimo
+                </p>
+
+                <p class="publicado__fecha">
+                    23/09/2022
+                </p>
             </div>
 
-            <div class="campo campo--msj">
-                <label for="mensaje" class="campo__nombre campo__nombre--msj">
-                    Mensaje
-                </label>
+            <div class="contenido">
+                <div class="contenido__vacio"></div>
 
-                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                <p class="contenido__texto">
+                    Buen artículo. Gracias
+                </p>
             </div>
+        </section> <!--* /Comentarios *-->
 
-            <input type="submit" class="formulario__btn" value="Comentar">
-        </form>
-    </section> <!--* Dejar Comentario *-->
+        <!--* Dejar Comentario *-->
+        <section class="dejar-comentario__contenedor">
+            <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+            <form class="formulario">
+                <div class="campo">
+                    <label for="autor" class="campo__nombre">
+                        Autor
+                    </label>
+
+                    <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="correo" class="campo__nombre">
+                        Correo
+                    </label>
+
+                    <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                </div>
+
+                <div class="campo campo--msj">
+                    <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                        Mensaje
+                    </label>
+
+                    <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                </div>
+
+                <input type="submit" class="formulario__btn" value="Comentar">
+            </form>
+        </section> <!--* Dejar Comentario *-->
+    </div> <!--* /Comentarios *-->
 
     <!--* Footer *-->
     <footer class="footer">

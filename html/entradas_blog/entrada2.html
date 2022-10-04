@@ -32,7 +32,7 @@
     </header> <!--* /Header *-->
 
     <!--* Entrada de Blog *-->
-    <main class="entradas__contenedor">
+    <main class="entradas__contenedor entradas__grid">
         <div class="entrada__imagen">
             <img src="../../img/Img_Entrada2.jpg" alt="Imagen Entrada">
         </div>
@@ -42,23 +42,23 @@
             pertenecen a la tradición Mahayana se les reconoce a los monjes por algunos títulos que utilizan, estos son:
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Gueshe: Se refiere a un cierto nivel de formación monástica y filosófica. Tradicionalmente es un título que se obtiene después de aproximadamente 25 años de estudio intensivo de tiempo completo en uno de los grandes monasterios. Es similar a alguien que consigue un nivel de "doctorado" aunque es mucho más que eso. Hay diferentes niveles de Gueshes, por ejemplo, un "Gueshe Lharampa" es un gueshe graduado con grandes honores y que fue uno de los primeros de su clase; es sobre todo un título que se refiere a la excelencia académica y al grado de entrenamiento en los textos filosóficos budistas.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Rimpoché: Significa "precioso" y se refiere a alguien que en su vida anterior alcanzó tal grado de dominio espiritual que no hubiera tenido que tomar más renacimientos. Sin embargo, debido a su compasión por los demás, tomó otro nacimiento a voluntad con el fin de enseñar a los demás. Por lo tanto, ellos son "preciosos" porque volvieron a mostrarnos cómo hacer lo que ellos hicieron.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Venerable: Es un término para quienes se han ordenado. Cualquier monje o monja se conoce tradicionalmente como "venerable". Es simplemente un término de respeto por aquellos que han elegido la vida monástica y han contraído el compromiso de preservar las enseñanzas de esta manera.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Lama: Significa literalmente "lleno de cualidades". Es un título que implica que la persona, quien es el referente de este término, ha demostrado cualidades espirituales y la capacidad para dirigir a otros en su vida y su camino espiritual. Hay algunas tradiciones budistas tibetanas donde se puede "ganar" el título "lama" después de hacer una cierta cantidad de retiro y estudio. En otras tradiciones el título "lama" se consigue demostrando las cualidades a través de los años, o cuando alguien ha sido reconocido claramente como un "Rimpoché" esa persona es también un "lama".
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Kendall Magnussen. (s.f). Recuperado el 22 de 09 de 2022.
         </p>
 
@@ -74,68 +74,70 @@
     </main> <!--* /Entrada de Blog *-->
 
     <!--* Comentarios *-->
-    <section class="comentarios__contenedor">
-        <div class="comentario">
-            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+    <div class="comentarios__grid">
+        <section class="comentarios__contenedor">
+            <div class="comentario">
+                <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
 
-            <p class="comentario__cantidad">
-                1 comentario
-            </p>
-        </div>
-
-        <div class="publicado">
-            <div class="publicado__vacio"></div>
-
-            <p class="publicado__autor">
-                Anónimo
-            </p>
-
-            <p class="publicado__fecha">
-                23/09/2022
-            </p>
-        </div>
-
-        <div class="contenido">
-            <div class="contenido__vacio"></div>
-
-            <p class="contenido__texto">
-                Buen artículo. Gracias
-            </p>
-        </div>
-    </section> <!--* /Comentarios *-->
-
-    <!--* Dejar Comentario *-->
-    <section class="dejar-comentario__contenedor">
-        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
-
-        <form class="formulario">
-            <div class="campo">
-                <label for="autor" class="campo__nombre">
-                    Autor
-                </label>
-
-                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                <p class="comentario__cantidad">
+                    1 comentario
+                </p>
             </div>
 
-            <div class="campo">
-                <label for="correo" class="campo__nombre">
-                    Correo
-                </label>
+            <div class="publicado">
+                <div class="publicado__vacio"></div>
 
-                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                <p class="publicado__autor">
+                    Anónimo
+                </p>
+
+                <p class="publicado__fecha">
+                    23/09/2022
+                </p>
             </div>
 
-            <div class="campo campo--msj">
-                <label for="mensaje" class="campo__nombre campo__nombre--msj">
-                    Mensaje
-                </label>
+            <div class="contenido">
+                <div class="contenido__vacio"></div>
 
-                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                <p class="contenido__texto">
+                    Buen artículo. Gracias
+                </p>
             </div>
+        </section> <!--* /Comentarios *-->
 
-            <input type="submit" class="formulario__btn" value="Comentar">
-        </form>
-    </section> <!--* Dejar Comentario *-->
+        <!--* Dejar Comentario *-->
+        <section class="dejar-comentario__contenedor">
+            <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+            <form class="formulario">
+                <div class="campo">
+                    <label for="autor" class="campo__nombre">
+                        Autor
+                    </label>
+
+                    <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="correo" class="campo__nombre">
+                        Correo
+                    </label>
+
+                    <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                </div>
+
+                <div class="campo campo--msj">
+                    <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                        Mensaje
+                    </label>
+
+                    <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                </div>
+
+                <input type="submit" class="formulario__btn" value="Comentar">
+            </form>
+        </section> <!--* Dejar Comentario *-->
+    </div> <!--* /Comentarios *-->
 
     <!--* Footer *-->
     <footer class="footer">

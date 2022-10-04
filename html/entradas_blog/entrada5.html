@@ -32,7 +32,7 @@
     </header> <!--* /Header *-->
 
     <!--* Entrada de Blog *-->
-    <main class="entradas__contenedor">
+    <main class="entradas__contenedor entradas__grid">
         <div class="entrada__imagen">
             <img src="../../img/Img_Entrada5.jpg" alt="Imagen Entrada">
         </div>
@@ -41,19 +41,19 @@
             Según el Tantra, la perfección no es algo que nos espera en alguna parte del futuro, el paraíso es “ahora” pero en este momento estamos cargados de conceptos limitados: “los hombres son así; las mujeres son así, yo soy de esta forma y no hay nada que pueda hacer al respecto, etc.” Por eso tenemos conflictos con nosotros mismos y con los demás. Todos estos conflictos se disolverán conforme nos adiestremos en la meditación tántrica y reconozcamos que todos, hombres y mujeres, somos seres completos. Aún más, todos los hombres y mujeres tienen tanto energía masculina como femenina. De hecho, cada uno de nosotros es la unión de TODA la energía del universo. Todo lo que necesitamos para ser completos está dentro de nosotros en este instante. Se trata sólo de reconocerlo. Ese es el punto de vista tántrico.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Detrás de todos nuestros deseos está el deseo de ser feliz. En este sentido, todos los seres somos iguales, ya que todos queremos la felicidad, aunque la definamos de formas diferentes, y ninguno de nosotros desea ni el más mínimo sufrimiento o decepción. De esta manera podemos decir que, todas nuestras acciones están motivadas bien por el deseo de experimentar placer, o bien por el de evitar experimentar lo desagradable.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Lo que la meditación tántrica nos enseña es cómo liberarnos de todos los condicionamientos que limitan nuestra comprensión de lo que somos y de lo que podemos llegar a ser. Si nos acercamos a estas poderosas enseñanzas con una inteligencia clara y una fuerte determinación de extraer su esencia, podremos traer definitivamente a nuestra vida la plenitud y la satisfacción interior que todos deseamos.
         </p>
         
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Nuestros deseos no se limitan solamente a los sentidos. Nuestra mente corre tras las ideas de la misma manera que los sentidos tras sus estímulos. El deseo impregna toda experiencia, de tal forma que podemos dudar que hagamos algo sin estar motivados por él.
         </p>
         
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Venerable Lama Geshe Tsering Palden. (s.f). Recuperado el 22 de 09 de 2022.
         </p>
 
@@ -69,68 +69,70 @@
     </main> <!--* /Entrada de Blog *-->
 
     <!--* Comentarios *-->
-    <section class="comentarios__contenedor">
-        <div class="comentario">
-            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+    <div class="comentarios__grid">
+        <section class="comentarios__contenedor">
+            <div class="comentario">
+                <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
 
-            <p class="comentario__cantidad">
-                1 comentario
-            </p>
-        </div>
-
-        <div class="publicado">
-            <div class="publicado__vacio"></div>
-
-            <p class="publicado__autor">
-                Anónimo
-            </p>
-
-            <p class="publicado__fecha">
-                23/09/2022
-            </p>
-        </div>
-
-        <div class="contenido">
-            <div class="contenido__vacio"></div>
-
-            <p class="contenido__texto">
-                Buen artículo. Gracias
-            </p>
-        </div>
-    </section> <!--* /Comentarios *-->
-
-    <!--* Dejar Comentario *-->
-    <section class="dejar-comentario__contenedor">
-        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
-
-        <form class="formulario">
-            <div class="campo">
-                <label for="autor" class="campo__nombre">
-                    Autor
-                </label>
-
-                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                <p class="comentario__cantidad">
+                    1 comentario
+                </p>
             </div>
 
-            <div class="campo">
-                <label for="correo" class="campo__nombre">
-                    Correo
-                </label>
+            <div class="publicado">
+                <div class="publicado__vacio"></div>
 
-                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                <p class="publicado__autor">
+                    Anónimo
+                </p>
+
+                <p class="publicado__fecha">
+                    23/09/2022
+                </p>
             </div>
 
-            <div class="campo campo--msj">
-                <label for="mensaje" class="campo__nombre campo__nombre--msj">
-                    Mensaje
-                </label>
+            <div class="contenido">
+                <div class="contenido__vacio"></div>
 
-                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                <p class="contenido__texto">
+                    Buen artículo. Gracias
+                </p>
             </div>
+        </section> <!--* /Comentarios *-->
 
-            <input type="submit" class="formulario__btn" value="Comentar">
-        </form>
-    </section> <!--* Dejar Comentario *-->
+        <!--* Dejar Comentario *-->
+        <section class="dejar-comentario__contenedor">
+            <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+            <form class="formulario">
+                <div class="campo">
+                    <label for="autor" class="campo__nombre">
+                        Autor
+                    </label>
+
+                    <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="correo" class="campo__nombre">
+                        Correo
+                    </label>
+
+                    <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                </div>
+
+                <div class="campo campo--msj">
+                    <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                        Mensaje
+                    </label>
+
+                    <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                </div>
+
+                <input type="submit" class="formulario__btn" value="Comentar">
+            </form>
+        </section> <!--* Dejar Comentario *-->
+    </div> <!--* /Comentarios *-->
 
     <!--* Footer *-->
     <footer class="footer">

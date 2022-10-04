@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Nueva Entrada de Blog</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <h1>Nueva entrada de blog</h1>
+    <!--* Header *-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../../index.html">
+                <img src="../img/Logo_Arupajhana.svg" alt="Logo">
+            </a>
+        </div>
+
+        <h1 class="header__titulo">Nueva Entrada de Blog</h1>
+    </header> <!--* /Header *-->
+
+    <!--* Entrada de Blog *-->
+    <main class="entrada__contenedor">
+        <form class="formulario">
+            <div class="formulario__entrada">
+                <div class="campo">
+                    <label for="autor" class="campo__nombre">
+                        Autor
+                    </label>
+
+                    <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                </div>
+                
+                <div class="campo">
+                    <label for="fecha" class="campo__nombre">
+                        Fecha
+                    </label>
+
+                    <input type="date" class="campo__input" id="fecha">
+                </div>
+                
+                <div class="campo">
+                    <label for="correo" class="campo__nombre">
+                        Correo
+                    </label>
+
+                    <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                </div>
+
+                <div class="campo">
+                    <label for="titulo" class="campo__nombre">
+                        Título
+                    </label>
+
+                    <input type="text" class="campo__input" id="titulo" placeholder="Título de la publicación">
+                </div>
+                
+                <div class="campo">
+                    <label for="imagen" class="campo__nombre">
+                        Imagen
+                    </label>
+
+                    <div class="campo__input select-file">
+                        <input type="file" class=" campo__input--file" id="titulo">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="tema" class="campo__nombre">
+                        Tema
+                    </label>
+
+                    <select class="campo__input" id="tema">
+                        <option selected disabled>-- Seleccione --</option>
+                        <option>Budismo</option>
+                        <option>Meditación</option>
+                        <option>Libros</option>
+                    </select>
+                </div>
+
+                <div class="campo campo--msj">
+                    <label for="texto" class="campo__nombre campo__nombre--msj">
+                        Texto
+                    </label>
+
+                    <textarea id="texto" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                </div>
+            </div>
+
+            <div class="formulario__btn--publicar">
+                <input type="submit" class="formulario__btn" value="Publicar">
+            </div>
+        </form>
+    </main>
+
+    <!--* Footer *-->
+    <footer class="footer">
+        <p class="footer__texto">Blog Arupajhana</p>
+
+        <p class="footer__texto">Todos los derechos reservados.</p>
+
+        <p class="footer__texto">2022</p>
+    </footer> <!--* /Footer *-->
 </body>
 </html>

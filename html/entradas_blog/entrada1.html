@@ -34,7 +34,7 @@
     </header> <!--* /Header *-->
 
     <!--* Entrada de Blog *-->
-    <main class="entradas__contenedor">
+    <main class="entradas__contenedor entradas__grid">
         <div class="entrada__imagen">
             <img src="../../img/Img_Entrada1.jpg" alt="Imagen Entrada">
         </div>
@@ -45,22 +45,22 @@
             pequeña que se encontraba situada en las estribaciones de la cordillera del Himalaya al sur de lo que hoy es el centro de Nepal. El significado de su nombre "Shakya" proviene del nombre de su tribu y "muni" significa sabio o santo. Su nombre y apellido de cuna era Siddhartha que significa "Objetivo logrado" y Gautama significa "La mejor vaca".
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Cuenta la historia, que a sus diecinueve (19) años, Siddhartha renunció a su vida secular y a su condición
             principesca para vivir una vida religiosa. Después de abandonar el palacio de los Shakya en Kapilavastu, viajó por diferentes lugares en donde realizo diferentes estudios religiosos, pasando por lugares como Rajagriha, Uruvilva, Nairanjana. Sin embargo, estos caminos religiosos que práctico durante años en los lugares anteriormente mencionados no le brindaron las respuesta que él esperaba, después de 6 años renunció a las prácticas de automortificación de Uruvilva.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Cerca de la ciudad de Gaya, se sentó bajo un árbol y entró en meditación. Se dice, que allí alcanzó la iluminación a la edad de treinta años. Con el tiempo, el árbol fue llamado el árbol de la iluminación porque Shakyamuni alcanzó el Bodhi o la iluminación bajo ese árbol. Una vez despertó, se cuestionó si debía o no compartir sus conocimientos con otros, pero al final decidió hacerlo, para que el camino a la liberación de los sufrimientos del nacimiento y la muerte estuviera abierto a todas las personas.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Primero se dirigió al Parque de los Venados en Varanasi,donde predicó las Cuatro Nobles Verdades a cinco ascetas
             que alguna vez habían sido sus compañeros. Desde ese momento hasta el día de su muerte, Shakyamuni continúo
             viajando a través de la India difundiendo sus enseñanzas. En el último año de su vida continúo  viajando hasta llegar a Kushinagara, allí se adentró en un bosque de árboles de sal, se acostó tranquilamente y dijo a sus discípulos: "No piensen que las palabras de su maestro ya no existen ni que se van a quedar sin maestro. Las enseñanzas y preceptos que les he expuesto deberán ser su maestro". Murió a la edad de 80 años.
         </p>
 
-        <p class="entrada__texto">
+        <p class="entrada__texto entrada__texto--columna">
             Centro Yamantaka. (s.f). Recuperado el 22 de 09 de 2022.
         </p>
 
@@ -68,76 +68,78 @@
             <p class="publicacion__autor">
                 <span>Autor</span>Nicolás Naranjo
             </p>
-
+    
             <p class="publicacion__fecha">
                 <span>Fecha</span>23/09/2022
             </p>
-        </div>
+        </div>        
     </main> <!--* /Entrada de Blog *-->
 
     <!--* Comentarios *-->
-    <section class="comentarios__contenedor">
-        <div class="comentario">
-            <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
+    <div class="comentarios__grid">
+        <section class="comentarios__contenedor">
+            <div class="comentario">
+                <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
 
-            <p class="comentario__cantidad">
-                1 comentario
-            </p>
-        </div>
-
-        <div class="publicado">
-            <div class="publicado__vacio"></div>
-
-            <p class="publicado__autor">
-                Anónimo
-            </p>
-
-            <p class="publicado__fecha">
-                23/09/2022
-            </p>
-        </div>
-
-        <div class="contenido">
-            <div class="contenido__vacio"></div>
-
-            <p class="contenido__texto">
-                Buen artículo. Gracias
-            </p>
-        </div>
-    </section> <!--* /Comentarios *-->
-
-    <!--* Dejar Comentario *-->
-    <section class="dejar-comentario__contenedor">
-        <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
-
-        <form class="formulario">
-            <div class="campo">
-                <label for="autor" class="campo__nombre">
-                    Autor
-                </label>
-
-                <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                <p class="comentario__cantidad">
+                    1 comentario
+                </p>
             </div>
 
-            <div class="campo">
-                <label for="correo" class="campo__nombre">
-                    Correo
-                </label>
+            <div class="publicado">
+                <div class="publicado__vacio"></div>
 
-                <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                <p class="publicado__autor">
+                    Anónimo
+                </p>
+
+                <p class="publicado__fecha">
+                    23/09/2022
+                </p>
             </div>
 
-            <div class="campo campo--msj">
-                <label for="mensaje" class="campo__nombre campo__nombre--msj">
-                    Mensaje
-                </label>
+            <div class="contenido">
+                <div class="contenido__vacio"></div>
 
-                <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                <p class="contenido__texto">
+                    Buen artículo. Gracias
+                </p>
             </div>
+        </section> <!--* /Comentarios *-->
 
-            <input type="submit" class="formulario__btn" value="Comentar">
-        </form>
-    </section> <!--* Dejar Comentario *-->
+        <!--* Dejar Comentario *-->
+        <section class="dejar-comentario__contenedor">
+            <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
+
+            <form class="formulario">
+                <div class="campo">
+                    <label for="autor" class="campo__nombre">
+                        Autor
+                    </label>
+
+                    <input type="text" class="campo__input" id="autor" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="correo" class="campo__nombre">
+                        Correo
+                    </label>
+
+                    <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
+                </div>
+
+                <div class="campo campo--msj">
+                    <label for="mensaje" class="campo__nombre campo__nombre--msj">
+                        Mensaje
+                    </label>
+
+                    <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                </div>
+
+                <input type="submit" class="formulario__btn" value="Comentar">
+            </form>
+        </section> <!--* Dejar Comentario *-->
+    </div> <!--* /Comentarios *-->
 
     <!--* Footer *-->
     <footer class="footer">
