@@ -48,6 +48,7 @@ img {
     display: block;
 }
 
+
 /** Header **/
 .header {
     padding: 4rem 0 0 0;
@@ -468,8 +469,8 @@ img {
 
 .campo__input--file {
     opacity: 0;
-    width: 2rem;
-    height: 1rem;
+    width: 200px;
+    height: 20px;
     display: inline-block;
 }
 
@@ -487,6 +488,7 @@ img {
     font-size: 1.5rem;
     margin-top: 2rem;
 }
+
 /** Footer **/
 .footer {
     background-color: var(--colorSecundario);
