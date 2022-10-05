@@ -48,6 +48,27 @@ img {
     display: block;
 }
 
+[class*="__contenedor"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+[class*="__btn"] {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
 
 /** Header **/
 .header {
@@ -64,7 +85,6 @@ img {
     margin: 0 auto 2rem auto;
 }
 
-.header__enlace,
 .header__titulo {
     font-size: 3rem;
     font-family: var(--fuenteTitulo);
@@ -73,6 +93,7 @@ img {
     color: var(--colorTitulo);
 }
 
+/**===== INDEX =====**/
 /** Hero **/
 .hero {
     height: 60rem;
@@ -119,17 +140,7 @@ img {
     z-index: 1;
 }
 
-/** Entradas de Blog **/
-.entradas__contenedor,
-.comentarios__contenedor,
-.dejar-comentario__contenedor,
-.entrada__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
-    background-color: var(--blanco);
-}
-
+/** Filtros **/
 .filtros {
     margin: 5rem 0;
     padding: 0;
@@ -161,6 +172,7 @@ img {
     color: var(--blanco);
 }
 
+/** Entradas de blog **/
 @media (min-width: 768px) { 
     .entradas__galeria {
         display: grid;
@@ -179,17 +191,17 @@ img {
     }
 }
 
-.entradas__entrada-blog {
+.entrada__blog {
     margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) { 
-    .entradas__entrada-blog {
+    .entrada__blog {
         margin-bottom: 0;
     }
 }
 
-.entradas__entrada-blog:last-of-type {
+.entrada__blog:last-of-type {
     margin-bottom: 0;
 }
 
@@ -211,23 +223,10 @@ img {
     line-height: 1.2;
 }
 
-.entrada__enlace {
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    padding: .5rem;
-    border-radius: .5rem;
-    border: 1px solid var(--colorSecundario);
-    background-color: var(--colorPrincipal);
-    color: var(--blanco);
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: .5rem;
-}
-
+/**===== ENTRADA DE BLOG =====**/
+/** Contenido **/
 @media (min-width: 768px) { 
-    .entradas__grid {
+    .entrada__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
@@ -235,14 +234,27 @@ img {
     } 
 }
 
+@media (min-width: 992px) { 
+    .entrada__grid {
+        grid-template-columns: 25% 75%;
+        column-gap: 5rem;
+    } 
+
+    .entrada__imagen {
+        grid-row: 1 / 6;
+    }
+}
+
 .entrada__texto {
     margin: 2rem 0;
     font-size: 1.2rem;
+    line-height: 2.2;
 }
 
 @media (min-width: 768px) { 
     .entrada__texto {
         margin: 1rem 0;
+        font-size: 1.4rem;
     }
 
     .entrada__texto--columna {
@@ -251,15 +263,14 @@ img {
 }
 
 @media (min-width: 992px) { 
-    .entrada__imagen {
-        grid-row: 1 / 6;
-    }
     .entrada__texto {
         grid-column: 2 / 3;
+        font-size: 1.6rem;
+        line-height: 2;
     }
 }
 
-/** Publicación Entrada **/
+/** Publicación **/
 .publicacion {
     display: flex;
     justify-content: space-between;
@@ -276,11 +287,26 @@ img {
         grid-column: 2 / 3;
     }
 }
+
 .publicacion__autor,
 .publicacion__fecha {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0;
+}
+
+@media (min-width: 768px) { 
+    .publicacion__autor,
+    .publicacion__fecha {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .publicacion__autor,
+    .publicacion__fecha {
+        font-size: 1.6rem;
+    }
 }
 
 .publicacion__autor span,
@@ -290,10 +316,12 @@ img {
 }
 
 /** Comentarios **/
+/* Comentarios publicados */
 @media (min-width: 768px) { 
     .comentarios__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
     }
 }
 
@@ -311,11 +339,11 @@ img {
 
 @media (min-width: 1900px) { 
     .comentarios__grid {
-        max-width: 40%;
+        max-width: 55%;
     }
 }
 
-.comentario {
+.comentarios {
     margin-top: 5rem;
 }
 
@@ -338,7 +366,24 @@ img {
 .publicado__autor,
 .publicado__fecha {
     font-weight: bold;
+    font-size: 1.2rem;
     margin: 0;
+}
+
+@media (min-width: 768px) { 
+    .comentario__cantidad,
+    .publicado__autor,
+    .publicado__fecha {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .comentario__cantidad,
+    .publicado__autor,
+    .publicado__fecha {
+        font-size: 1.6rem;
+    }
 }
 
 .publicado {
@@ -346,12 +391,26 @@ img {
 }
 
 .contenido__texto {
+    font-size: 1.2rem;
     margin-top: 2rem;
     padding: 2rem;
     border: 1px solid var(--gris);
 }
 
-.dejar-comentario__contenedor {
+@media (min-width: 768px) { 
+    .contenido__texto {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .contenido__texto {
+        font-size: 1.6rem;
+    }
+}
+
+/* Dejar comentario */
+.dejar-comentario {
     margin-top: 5rem;
 }
 
@@ -368,64 +427,37 @@ img {
     margin-top: 5rem;
 }
 
-.formulario__entrada {
-    margin-top: 5rem;
-}
-
-@media (min-width: 768px) { 
-    .formulario__entrada {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        column-gap: 2rem;
-    }
-
-    .campo--msj {
-        grid-column: 1 / 3;
-    }
-
-    .formulario__btn--publicar {
-        max-width: 50%;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 1024px) { 
-    .formulario__entrada {
-        grid-template-columns: repeat(3, 33.33%);
-    }
-
-    .campo--msj {
-        grid-column: 1 / 4;
-    }
-
-    .formulario__btn--publicar {
-        max-width: 20%;
-        margin: 0;
-    }
-}
-
 .campo {
     display: flex;
     margin-bottom: 2rem;
     align-items: center;
 }
 
-.campo__nombre {
-    font-weight: bold;
-    color: var(--colorSecundario);
-}
-
-.campo--msj {
+.campo--cmt {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0;
 }
 
+@media (min-width: 768px) { 
+    .campo--cmt {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .campo--cmt {
+        grid-column: 1 / 4;
+    }
+}
+
 .campo__nombre {
+    font-weight: bold;
+    color: var(--colorSecundario);
     flex-basis: 10rem;
 }
 
-.campo__nombre--msj {
+.campo__nombre--cmt {
     flex-basis: 0;
     margin-bottom: 2rem;
 }
@@ -437,22 +469,36 @@ img {
     border-radius: .5rem;
 }
 
-.campo__input--msj {
+.campo__input--cmt {
     border-radius: 0;
     width: 100%;
 }
 
-.campo__nombre--file {
-    position: relative;
-    display: inline-block;
+.formulario__btn {
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-.select-file {
-    position: relative;
-    
+/**===== NUEVA ENTRADA DE BLOG =====**/
+@media (min-width: 768px) { 
+    .formulario__entrada {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 2rem;
+    }
 }
 
-.select-file::before {
+@media (min-width: 1024px) { 
+    .formulario__entrada {
+        grid-template-columns: repeat(3, 33.33%);
+    }
+}
+
+.campo__input--img {
+    position: relative;
+}
+
+.campo__input--img::before {
     background-color: var(--colorPrincipal);
     color: white;
     display: flex;
@@ -469,24 +515,24 @@ img {
 
 .campo__input--file {
     opacity: 0;
-    width: 200px;
-    height: 20px;
+    width: 20rem;
+    height: 2rem;
     display: inline-block;
 }
 
-.formulario__btn {
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    padding: 1rem;
-    border-radius: .5rem;
-    border: 1px solid var(--colorSecundario);
-    background-color: var(--colorPrincipal);
-    color: var(--blanco);
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+@media (min-width: 768px) { 
+    .formulario__publicar {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .formulario__publicar,
+    .formulario__comentar {
+        max-width: 20%;
+        margin: 0;
+    }
 }
 
 /** Footer **/
@@ -500,5 +546,12 @@ img {
     margin: 0;
     text-align: center;
     font-weight: bold;
+    font-size: 1.4rem;
     color: var(--blanco);
+}
+
+@media (min-width: 992px) { 
+    .footer__texto {
+        font-size: 1.8rem;
+    }
 }

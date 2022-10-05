@@ -32,7 +32,7 @@
     </header> <!--* /Header *-->
 
     <!--* Entrada de Blog *-->
-    <main class="entradas__contenedor entradas__grid">
+    <main class="entrada__contenedor entrada__grid">
         <div class="entrada__imagen">
             <img src="../../img/Img_Entrada4.jpg" alt="Imagen Entrada">
         </div>
@@ -66,8 +66,8 @@
     </main> <!--* /Entrada de Blog *-->
 
     <!--* Comentarios *-->
-    <div class="comentarios__grid">
-        <section class="comentarios__contenedor">
+    <div class="comentarios__grid comentarios__contenedor">
+        <section class="comentarios">
             <div class="comentario">
                 <img src="../../img/comments.svg" alt="Comentario" class="comentario__imagen">
 
@@ -98,7 +98,7 @@
         </section> <!--* /Comentarios *-->
 
         <!--* Dejar Comentario *-->
-        <section class="dejar-comentario__contenedor">
+        <section class="dejar-comentario">
             <h2 class="dejar-comentario__titulo">Dejar Comentario</h2>
 
             <form class="formulario">
@@ -118,15 +118,17 @@
                     <input type="email" class="campo__input" id="correo" placeholder="Ingresa tu correo">
                 </div>
 
-                <div class="campo campo--msj">
-                    <label for="mensaje" class="campo__nombre campo__nombre--msj">
-                        Mensaje
+                <div class="campo campo--cmt">
+                    <label for="comentario" class="campo__nombre campo__nombre--cmt">
+                        Comentario
                     </label>
 
-                    <textarea id="mensaje" cols="20" rows="10" class="campo__input campo__input--msj"></textarea>
+                    <textarea id="comentario" cols="20" rows="10" class="campo__input campo__input--cmt"></textarea>
                 </div>
-
-                <input type="submit" class="formulario__btn" value="Comentar">
+                
+                <div class="formulario__comentar">
+                    <input type="submit" class="formulario__btn" value="Comentar">
+                </div>
             </form>
         </section> <!--* Dejar Comentario *-->
     </div> <!--* /Comentarios *-->
